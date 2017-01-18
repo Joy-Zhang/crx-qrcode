@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "QR Code",
+  "version": "0.0.1",
+  "icons": {"128": "resource/icon.png"},
+  "description": "QR Code",
+  "background": {
+    "scripts": ["lib/esl.js", "eventPage.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "resource/icon.png",
+    "default_title": "QR Code",
+    "default_popup": "popup/index.html"
+  }
+}
